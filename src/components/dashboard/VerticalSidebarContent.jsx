@@ -19,12 +19,12 @@ export default class VerticalSidebarContent extends React.Component {
                     Sales Leads
                 </Menu.Item>
                 <Menu.Item as='a'>
-                    <Icon name='gamepad' />
-                    Games
+                    <Icon name='users' />
+                    Customer Records
                 </Menu.Item>
                 <Menu.Item as='a'>
-                    <Icon name='camera' />
-                    Channels
+                    <Icon name='line graph' />
+                    Stats
                 </Menu.Item>
             </React.Fragment>
         );

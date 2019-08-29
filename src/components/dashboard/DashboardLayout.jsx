@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react';
-import { Segment, Sidebar, } from 'semantic-ui-react';
+import { Segment, Sidebar, Container, Sticky, } from 'semantic-ui-react';
 import VerticalSidebar from './VerticalSidebar';
 import VerticalSidebarContent from './VerticalSidebarContent';
 import Navigation from './Navigation';
@@ -34,7 +34,12 @@ export default class DashboardLayout extends React.Component {
                 {<VerticalSidebarContent upSender={this.passLayoutTypeUp.bind(this)} />}
             </VerticalSidebar>
             <Sidebar.Pusher>
-                {mainContent}
+                <div style={{minHeight: '93vh'}}>
+                    <br />
+                    <Container>
+                        {mainContent}
+                    </Container>
+                </div>
             </Sidebar.Pusher>
           </Sidebar.Pushable>
         </div>
