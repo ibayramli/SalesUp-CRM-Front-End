@@ -1,0 +1,18 @@
+.ui.segment {
+    position: relative;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    box-shadow: 0px 1px 2px 0px rgba(34,36,38,0.15);
+    margin: 0rem 0;
+    padding: 0em 0em;
+    border-radius: 0;
+    border: none;
+}
+
+.ui.inverted.menu {
+    border: 0 solid transparent;
+    background: #9d9c97;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+

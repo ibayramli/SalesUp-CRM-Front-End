@@ -44,7 +44,7 @@ export default class LoginForm extends React.Component {
         return (
             <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
                 <Grid.Column style={{ maxWidth: 450}}>
-                  <Header as='h2' style={{color: "teal"}} textAlign='center'>
+                  <Header as='h2' style={{color: "black"}} textAlign='center'>
                     <Image src='/logo.png' /> Login to your account
                   </Header>
                   <Form size='large' onSubmit={this.handleSubmit}>
@@ -66,7 +66,7 @@ export default class LoginForm extends React.Component {
                         placeholder='Password'
                         type='password'
                       />
-                      <Form.Button color='teal' fluid size='large'>
+                      <Form.Button color='black' fluid size='large'>
                         Login
                       </Form.Button>
                     </Segment>
