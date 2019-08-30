@@ -82,9 +82,9 @@ export default class SalesLeads extends React.Component {
         const { salesLeads } = this.state;
 
         return (
-            <div>
+            <Container>
                 {this.getLeadCollection(salesLeads)}
-            </div>
+            </Container>
         );
     }
 }

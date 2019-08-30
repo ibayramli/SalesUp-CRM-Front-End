@@ -36,9 +36,7 @@ export default class DashboardLayout extends React.Component {
             <Sidebar.Pusher>
                 <div style={{minHeight: '93vh'}}>
                     <br />
-                    <Container>
-                        {mainContent}
-                    </Container>
+                  {mainContent}
                 </div>
             </Sidebar.Pusher>
           </Sidebar.Pushable>
