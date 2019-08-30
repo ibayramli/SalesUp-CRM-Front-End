@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import axios from 'axios';
+import SectorPieChart from './Charts/SectorPieChart';
+
 
 const token = localStorage.azcloud;
 
@@ -8,11 +10,11 @@ export default class Stats extends React.Component {
     constructor() {
         super();
         this.state = {
-            acquisitionData: '',
-            customerCountData: '',
-            industryData: '',
-            sectorData: '',
-            percentageSectorData: '',
+            acquisitionData: [],
+            customerCountData: [],
+            industryData: [],
+            sectorData: [],
+            percentageSectorData: [],
         }
     }
 
@@ -119,9 +121,13 @@ export default class Stats extends React.Component {
     }
 
     render() {
-        console.log(this.state.percentageSectorData)
+        console.log(this.state)
+        const { acquisitionData } = this.state;
+
         return (
-            ""
+            <div>
+                In Progress ... 
+            </div>
         );
     }
 }

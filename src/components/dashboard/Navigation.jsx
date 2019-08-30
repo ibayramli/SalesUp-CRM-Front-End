@@ -35,7 +35,7 @@ export default class Navigation extends React.Component {
               onClick={this.handleItemClick}
             />
             <Menu.Item
-              name='friends'
+              name='employees'
               active={activeItem === 'friends'}
               onClick={this.handleItemClick}
             />

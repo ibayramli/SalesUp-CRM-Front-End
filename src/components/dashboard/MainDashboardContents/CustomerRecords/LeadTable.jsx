@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Card, Table, Menu, Icon, Segment } from 'semantic-ui-react';
 import axios from 'axios';
 
+
 const token = localStorage.azcloud;
 
 export default class LeadTable extends React.Component {

@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
-import { Form, Grid, Header, Segment, Image} from 'semantic-ui-react'
+import { Form, Grid, Header, Segment, Image, Icon} from 'semantic-ui-react'
 import { Redirect } from 'react-router-dom';
 import SuccessMessage from './SuccessMessage';
 import ErrorMessage from './ErrorMessage';
+import './logo.png'
+
 
 export default class LoginForm extends React.Component {
     constructor() {
@@ -45,7 +47,7 @@ export default class LoginForm extends React.Component {
             <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
                 <Grid.Column style={{ maxWidth: 450}}>
                   <Header as='h2' style={{color: "black"}} textAlign='center'>
-                    <Image src='/logo.png' /> Login to your account
+                    <Icon name="sign in" /> Login to your account
                   </Header>
                   <Form size='large' onSubmit={this.handleSubmit}>
                     <Segment stacked>
